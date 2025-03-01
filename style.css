@@ -285,6 +285,278 @@ a {
     font-family: var(--header-font);
 }
 
+/* Session Card  */
+.session {
+    display: grid;
+}
+
+.session_card {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.session_card:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/session-1.jpg");
+}
+
+.session_card:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/session-2.jpg");
+}
+
+.session_card:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/session-3.jpg");
+}
+
+.session_card:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/session-4.jpg");
+}
+
+.session_card h4 {
+    position: relative;
+    isolation: isolate;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.session_card h4::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -5px;
+    height: 25px;
+    aspect-ratio: 1;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.session_card p {
+    max-width: 350px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    color: var(--extra-light);
+}
+
+/* Trainer Grid  */
+
+.trainer_grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.trainer_card img {
+    margin-bottom: 1rem;
+}
+
+.trainer_card h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.trainer_card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.trainer_socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.trainer_socials a {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+.trainer_socials a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Membership  */
+
+.membership {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/membership.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.membership_container .section_header {
+    color: var(--white);
+}
+
+.membership_grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership_card {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.membership_card:hover {
+    background-color: var(--primary-color);
+}
+
+.membership_card h4 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.membership_card ul {
+    margin-bottom: 1rem;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership_card li {
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+}
+
+.membership_card li span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.membership_card:hover li span {
+    color: var(--white);
+}
+
+.membership_card h3 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.membership_card h3 :is(sup, span) {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.membership_card:hover .btn {
+    background-color: var(--text-dark);
+}
+
+/* Clinet */
+
+.swiper {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.client_card {
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.client_card img {
+    max-width: 100px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 100%;
+}
+
+.client_card>div {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--text-light);
+    opacity: 0.5;
+}
+
+.client_card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.client_card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+
+/* Blog */
+
+.blog {
+    background-color: var(--text-dark);
+}
+
+.blog_container .section_header {
+    color: var(--white);
+}
+
+.blog_grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.blog_card img {
+    margin-bottom: 10px;
+}
+
+.blog_card h4 {
+    max-width: calc(100% - 1rem);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.blog_card:hover h4 {
+    color: var(--primary-color);
+}
+
+.blog_btn {
+    margin-top: 4rem;
+    text-align: center;
+}
+
 /* Logo Banner */
 
 .logo_banner {
@@ -408,7 +680,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .session_card {
+    .session_card {
         padding: 7rem 2rem;
     }
 
@@ -422,7 +694,7 @@ a {
 
     .blog_grid {
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
 
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
@@ -430,7 +702,8 @@ a {
 }
 
 @media (width > 768px) {
-    /* nav {
+
+    nav {
         position: static;
         padding: 1.5rem 1rem;
     }
@@ -472,7 +745,8 @@ a {
 
     .header_content {
         grid-column: 2/3;
-    } */
+    }
+
 
     .about_header {
         grid-template-columns: repeat(2, 1fr);
@@ -493,7 +767,7 @@ a {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* .session {
+    .session {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -511,7 +785,7 @@ a {
 
     .blog_grid {
         grid-template-columns: repeat(4, 1fr);
-    }*/
+    }
 
     .logo_banner {
         grid-template-columns: repeat(4, 1fr);
