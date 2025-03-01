@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoElite Gym – Train Like an Elite. Live Like a Legend.</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f5b6191954.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,26 +20,146 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav__bar">
-            <div class="nav__header">
-                <div class="nav__logo">
+    <div class="banner">
+        <video src="./assets/banner-vid.mp4" type="video/mp4" autoplay muted loop></video>
+        <div class="content" id="home">
+            <nav class="navbar">
+                <div class="nav_left">
+                    <div class="nav_logo">
+                        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="nav_menu_btn" id="menu-btn">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                <ul class="nav_right" id="nav-tabs">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#trainer">TRAINER</a></li>
+                    <li><a href="#client">CLIENT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>NEO ELITE GYM</h1>
+                <h3></h3>
+                <p>Results come to those who refuse to quit</p>
+                <a href="#" class="button">Get Started !</a>
+            </div>
+        </div>
+    </div>
+    <section class="section_container about_container" id="about">
+        <div class="about_header">
+            <h2 class="section_header">ABOUT US</h2>
+            <p class="section_description">
+                At NeoElite Gym, we inspire and support individuals in achieving their fitness goals, no matter their
+                level or background.
+            </p>
+        </div>
+        <div class="about_grid">
+            <div class="about_card">
+                <h4>WINNER COACHES</h4>
+                <p>
+                    We pride ourselves on having a team of dedicated and experienced
+                    coaches who are committed to helping you succeed.
+                </p>
+            </div>
+            <div class="about_card">
+                <h4>AFFORDABLE PRICE</h4>
+                <p>
+                    We believe that everyone should have access to high-quality fitness
+                    facilities without breaking the bank.
+                </p>
+            </div>
+            <div class="about_card">
+                <h4>MODERN EQUIPMENTS</h4>
+                <p>
+                    Stay ahead of the curve with our state-of-the-art equipment designed
+                    to elevate your workout experience.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="section_container logo_banner">
+        <img src="assets/banner-1.png" alt="banner" />
+        <img src="assets/banner-2.png" alt="banner" />
+        <img src="assets/banner-3.png" alt="banner" />
+        <img src="assets/banner-4.png" alt="banner" />
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <div class="footer_logo">
                     <a href="#"><img src="assets/logo.png" alt="logo" /></a>
                 </div>
-                <div class="nav__menu__btn" id="menu-btn">
-                    <i class="ri-menu-line"></i>
+                <p>
+                    Welcome to NeoElite Gym, where strength meets sophistication and every workout fuels greatness.
+                </p>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            M.K.B. Nagar MainRoad <br> Chennai, TamilNadu, India - 600039
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            +91 9876543210
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            info@neoelitegym.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>GALLERY</h4>
+                <div class="gallery_grid">
+                    <img src="assets/gallery-1.jpg" alt="gallery" />
+                    <img src="assets/gallery-2.jpg" alt="gallery" />
+                    <img src="assets/gallery-3.jpg" alt="gallery" />
+                    <img src="assets/gallery-4.jpg" alt="gallery" />
+                    <img src="assets/gallery-5.jpg" alt="gallery" />
+                    <img src="assets/gallery-6.jpg" alt="gallery" />
+                    <img src="assets/gallery-7.jpg" alt="gallery" />
+                    <img src="assets/gallery-8.jpg" alt="gallery" />
+                    <img src="assets/gallery-9.jpg" alt="gallery" />
                 </div>
             </div>
-            <ul class="nav__links" id="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#trainer">TRAINER</a></li>
-                <li><a href="#client">CLIENT</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
+            <div class="footer_col">
+                <h4>NEWSLETTER</h4>
+                <p>
+                    Stay ahead in your fitness journey! Sign up today and get exclusive updates, special offers,
+                    and expert tips—straight to your inbox!
+                </p>
+                <form action="/">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="btn btn_primary">SEND</button>
+                </form>
+                <div class="footer_socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
         </div>
-    </nav>
+        <div class="footer_bar">
+            Copyright © 2025 <strong>NeoElite Gym</strong>. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
