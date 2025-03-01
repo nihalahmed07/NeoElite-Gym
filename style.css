@@ -10,13 +10,16 @@
     --header-font: 'Segoe UI', sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* Google Fonts */
@@ -33,9 +36,6 @@
     font-style: normal;
 }
 
-body {
-    font-family: "Ubuntu", sans-serif;
-}
 
 /* General */
 .btn {
@@ -75,6 +75,8 @@ a {
     text-decoration: none;
     transition: 0.3s;
 }
+
+/* Banner */
 
 .banner {
     display: flex;
@@ -120,8 +122,8 @@ a {
 }
 
 .nav_logo a img {
-    height: 35px;
-    width: 85px;
+    height: 30px;
+    width: 140px;
 }
 
 .nav_logo a img:hover {
@@ -172,6 +174,7 @@ a {
     font-size: 10vh;
     text-shadow: 2px 2px 4px #540b0e;
     transition: 0.3s ease;
+    display: inline;
 }
 
 .title h1:hover {
@@ -215,13 +218,14 @@ a {
 .section_header {
     font-size: 2rem;
     font-weight: 600;
-    /* font-family: var(--header-font); */
     color: var(--text-dark);
     text-align: center;
 }
 
 .section_description {
     color: var(--text-light);
+    font-family: var(--header-font);
+
 }
 
 /* About Section  */
@@ -288,6 +292,9 @@ a {
 /* Session Card  */
 .session {
     display: grid;
+    /* background-color: #540b0e; */
+    /* margin: 10px; */
+    gap: 2px;
 }
 
 .session_card {
@@ -326,7 +333,6 @@ a {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 500;
-    font-family: var(--header-font);
     color: var(--white);
 }
 
@@ -337,7 +343,7 @@ a {
     left: -5px;
     height: 25px;
     aspect-ratio: 1;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-red);
     z-index: -1;
 }
 
@@ -346,6 +352,7 @@ a {
     margin-inline: auto;
     margin-bottom: 2rem;
     color: var(--extra-light);
+    font-family: var(--header-font);
 }
 
 /* Trainer Grid  */
@@ -363,7 +370,6 @@ a {
 .trainer_card h4 {
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: var(--header-font);
     color: var(--text-dark);
     text-align: center;
 }
@@ -372,6 +378,7 @@ a {
     margin-bottom: 1rem;
     color: var(--text-light);
     text-align: center;
+    font-family: var(--header-font);
 }
 
 .trainer_socials {
@@ -585,6 +592,8 @@ a {
 .footer_logo img {
     margin-bottom: 1rem;
     max-width: 120px;
+    height: 30px;
+    width: 140px;
 }
 
 .footer_col p {
@@ -696,6 +705,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -703,7 +713,7 @@ a {
 
 @media (width > 768px) {
 
-    nav {
+    /* nav {
         position: static;
         padding: 1.5rem 1rem;
     }
@@ -745,7 +755,7 @@ a {
 
     .header_content {
         grid-column: 2/3;
-    }
+    } */
 
 
     .about_header {
@@ -790,6 +800,7 @@ a {
     .logo_banner {
         grid-template-columns: repeat(4, 1fr);
     }
+
 
     .footer_container {
         grid-template-columns: repeat(3, 1fr);
