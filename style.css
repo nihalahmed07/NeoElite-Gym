@@ -683,6 +683,9 @@ a {
 }
 
 .footer_bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
     padding: 1rem;
     font-size: 0.9rem;
     color: var(--primary-text-color);
