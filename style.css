@@ -395,7 +395,7 @@ a {
 }
 
 .trainer_socials a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color-red);
 }
 
 
@@ -427,13 +427,16 @@ a {
 
 .membership_card:hover {
     background-color: var(--primary-color);
+    transform: scale(1.1);
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    /* transition: ease-in-out; */
 }
 
 .membership_card h4 {
     margin-bottom: 2rem;
     font-size: 1.75rem;
     font-weight: 500;
-    font-family: var(--header-font);
     color: var(--white);
 }
 
@@ -448,12 +451,13 @@ a {
     display: flex;
     gap: 10px;
     color: var(--white);
+    font-family: var(--header-font);
 }
 
 .membership_card li span {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--primary-color-red);
     transition: 0.3s;
 }
 
@@ -465,7 +469,7 @@ a {
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 400;
-    font-family: var(--header-font);
+    /* font-family: var(--header-font); */
     color: var(--white);
 }
 
@@ -475,7 +479,7 @@ a {
 }
 
 .membership_card:hover .btn {
-    background-color: var(--text-dark);
+    background-color: var(--primary-color-red);
 }
 
 /* Clinet */
