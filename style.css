@@ -309,6 +309,7 @@ a {
 .session_card:nth-child(1) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("assets/session-1.jpg");
+    /* background-size: auto 600px; */
 }
 
 .session_card:nth-child(2) {
@@ -683,9 +684,9 @@ a {
 }
 
 .footer_bar {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    /* display: flex;
+    justify-content: space-between; */
+    /* gap: 40px; */
     padding: 1rem;
     font-size: 0.9rem;
     color: var(--primary-text-color);
